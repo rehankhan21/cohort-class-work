@@ -6,6 +6,8 @@
 
 .img {
     position: absolute;
+    width: 100px;
+    height: 100px;
     top: 40px;
     animation-name: go;
     animation-fill-mode: infinite; 
@@ -26,7 +28,13 @@ img {
     0%{
         transform: translatey(0);
     }
+    10%{
+        transform: translatey(100px);
+    }
+    20%{
+        transform: translateX(100px);
+    }
     100%{
-        transform: translatey(500px);
+        transform: translateZ(100px);
     }
 } 
