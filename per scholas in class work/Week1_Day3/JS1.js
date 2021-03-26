@@ -1,0 +1,1 @@
+document.getElementById("demo").innerHTML = "My firs js file";
