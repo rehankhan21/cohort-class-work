@@ -1,0 +1,40 @@
+.parent {
+    width: 500px;
+    height: 100%;
+    background-color: grey;
+}
+
+.img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    animation-name: go;
+    animation-fill-mode: infinite; 
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+img {
+    height: auto;
+    width: 500px;
+}
+
+@keyframes go {
+    0%{
+        transform: translatey(0);
+    }
+    10%{
+        transform: translatey(100px);
+    }
+    20%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateZ(100px);
+    }
+} 
